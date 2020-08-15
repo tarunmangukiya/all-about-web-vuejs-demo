@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        all-about-web-vuejs-demo
+        Hello All About Web!
       </h1>
       <div class="links">
         <a

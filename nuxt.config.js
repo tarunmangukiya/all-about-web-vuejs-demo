@@ -4,7 +4,7 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -52,6 +52,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
   ],
   /*
   ** Build configuration
