@@ -6,21 +6,29 @@
         Hello All About Web!
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
+        <nuxt-link
+          :to="{ name: 'search', query: { q: 'web' } }"
           target="_blank"
           rel="noopener noreferrer"
           class="button--green"
         >
-          Documentation
-        </a>
+          Search
+        </nuxt-link>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/tarunmangukiya/all-about-web-vuejs-demo"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
         >
           GitHub
+        </a>
+        <a
+          href="https://www.canva.com/design/DAEE7R1zM5E/IgVaGRX28vKKI0hge8uy1Q/view?utm_content=DAEE7R1zM5E&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button--grey"
+        >
+          Presentation
         </a>
       </div>
     </div>
