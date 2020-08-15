@@ -2,22 +2,20 @@
   <div class="container">
     <ul class="list-unstyled row">
       <li v-for="(item, index) in items.data" :key="index" class="col-3 mb-4">
-        <b-card
-          :title="item.name"
-          :img-src="item.urls.png_256"
-          :img-alt="item.name"
-          img-top
-          tag="article"
-        >
-          <b-button href="#" variant="primary">View Details</b-button>
-        </b-card>
+        <icon-template :item="item" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import IconTemplate from '@/components/IconTemplate.vue'
+
 export default {
+  components: {
+    IconTemplate
+  },
+
   data() {
     return {
       items: {}
